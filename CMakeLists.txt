@@ -14,6 +14,7 @@ include_directories(src)
 
 set(SRC_LIST
         src/dp/knapsack_problem.cpp
+        src/search/binary/binary_search.cpp
         )
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
@@ -22,6 +23,7 @@ enable_testing()
 
 set(SRC_TESTS
         test/dp/knapsack_problem_test.cpp
+        test/search/binary/binary_search_test.cpp
         test/main.cpp
         )
 

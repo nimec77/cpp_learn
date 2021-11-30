@@ -16,6 +16,7 @@ set(SRC_LIST
         src/dp/knapsack_problem.cpp
         src/search/binary/binary_search.cpp
         src/sort/selection/selection_sort.cpp
+        src/sort/insertion/insertion_sort.cpp
         )
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
@@ -26,6 +27,7 @@ set(SRC_TESTS
         test/dp/knapsack_problem_test.cpp
         test/search/binary/binary_search_test.cpp
         test/sort/selection/selection_sort_test.cpp
+        test/sort/insertion/insertion_sort_test.cpp
         test/main.cpp
         )
 

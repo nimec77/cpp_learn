@@ -8,8 +8,8 @@
 
 TEST(MergeSortTest, MergeSortSort) {
     std::vector<int> arr_{12, 9, 3, 7, 14, 11, 6, 2, 10, 5};
-    const auto result_ = MergeSort::Sort(arr_, 0, 9);
+    MergeSort::Sort(arr_, 0, 9);
     const auto sorted_ = std::vector<int>{2, 3, 5, 6, 7, 9, 10, 11, 12, 14};
 
-    test_helper::SortResultTest(*result_, sorted_);
+    test_helper::SortResultTest(arr_, sorted_);
 }

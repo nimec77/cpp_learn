@@ -18,6 +18,7 @@ set(SRC_LIST
         src/sort/selection/selection_sort.cpp
         src/sort/insertion/insertion_sort.cpp
         src/sort/merge/merge_sort.cpp
+        src/sort/quicksort/quicksort.cpp
         )
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
@@ -31,6 +32,7 @@ set(SRC_TESTS
         test/sort/selection/selection_sort_test.cpp
         test/sort/insertion/insertion_sort_test.cpp
         test/sort/merge/merge_sort_test.cpp
+        test/sort/quicksort/quicksort_test.cpp
         test/main.cpp
         )
 

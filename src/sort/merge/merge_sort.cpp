@@ -4,19 +4,17 @@
 
 #include "merge_sort.h"
 
-std::unique_ptr<std::vector<int>> MergeSort::Sort(std::vector<int> &arr, const int p, const int r) {
+void MergeSort::Sort(std::vector<int> &arr, const int p, const int r) {
     if (p >= r) {
-        return std::make_unique<std::vector<int>>(arr);
+        return;
     }
 
-    auto q = (p + r) / 2;
+    const auto q = (p + r) / 2;
 
     Sort(arr, p, q);
     Sort(arr, q + 1, r);
 
     Merge(arr, p, q, r);
-
-    return std::make_unique<std::vector<int>>(arr);
 }
 
 void MergeSort::Merge(std::vector<int> &arr, const int p, const int q, const int r) {

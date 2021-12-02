@@ -10,7 +10,7 @@
 
 class MergeSort {
 public:
-    static std::unique_ptr<std::vector<int>> Sort(std::vector<int> &arr, int p, int r);
+    static void Sort(std::vector<int> &arr, int p, int r);
 
 private:
     static void Merge(std::vector<int> &arr, int p, int q, int r);

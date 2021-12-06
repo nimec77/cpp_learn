@@ -15,6 +15,8 @@ public:
 
 private:
     static std::unique_ptr<std::map<int, int>> CountKeysEqual(const std::vector<int> &arr, int max_value);
+
+    static std::unique_ptr<std::vector<int>> Rearrange(const std::vector<int> &arr, std::map<int, int> &less, int max_value);
 };
 
 

@@ -36,8 +36,9 @@ set(SRC_TESTS
         test/sort/merge/merge_sort_test.cpp
         test/sort/quicksort/quicksort_test.cpp
         test/sort/counting/counting_sort_test.cpp
+        test/big_numbers/big_numbers_test.cpp
         test/main.cpp
-        test/big_numbers/big_numbers_test.cpp)
+        )
 add_executable(
         google_test
         ${SRC_LIST}

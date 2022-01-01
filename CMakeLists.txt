@@ -20,6 +20,7 @@ set(SRC_LIST
         src/sort/merge/merge_sort.cpp
         src/sort/quicksort/quicksort.cpp
         src/sort/counting/counting_sort.cpp
+        src/big_numbers/big_numbers.cpp
         )
 
 add_executable(${PROJECT_NAME} ${SRC_LIST})
@@ -36,8 +37,7 @@ set(SRC_TESTS
         test/sort/quicksort/quicksort_test.cpp
         test/sort/counting/counting_sort_test.cpp
         test/main.cpp
-        )
-
+        test/big_numbers/big_numbers_test.cpp)
 add_executable(
         google_test
         ${SRC_LIST}
